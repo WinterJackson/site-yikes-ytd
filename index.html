@@ -72,7 +72,7 @@
               YouTube videos easily for free.
             </p>
             <div class="cta">
-              <a href="#" class="btn">Try Now!</a>
+              <a href="#" class="btn try-btn">Try Now!</a>
             </div>
           </div>
 
@@ -628,6 +628,22 @@
 
       // Add click event listener to the download button
       downloadBtn.addEventListener("click", function () {
+        // Scroll the page to the download section smoothly
+        downloadSection.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Select the download button
+      var tryBtn = document.querySelector(".try-btn");
+
+      // Select the download section
+      var downloadSection = document.getElementById("download-app");
+
+      // Add click event listener to the download button
+      tryBtn.addEventListener("click", function () {
         // Scroll the page to the download section smoothly
         downloadSection.scrollIntoView({ behavior: "smooth" });
       });
