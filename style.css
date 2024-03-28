@@ -562,6 +562,7 @@ footer {
   width: 350px;
   bottom: 370px;
   left: 30px;
+  top: -300px;
   opacity: 0.1;
 }
 
