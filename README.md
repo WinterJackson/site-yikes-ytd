@@ -4,6 +4,8 @@
 
 Welcome to the Yikes YTD website repository! This repository contains the source code for the Yikes YTD website, where users can learn more about the Yikes YTD application and download it.
 
+The link to the site is https://winterjackson.github.io/site-yikes-ytd/index.html
+
 ## About Yikes YTD
 
 Yikes YTD is a free YouTube video downloader application that allows users to download videos from YouTube for offline viewing. With Yikes YTD, users can easily save their favorite videos, tutorials, music, and more to their devices.
