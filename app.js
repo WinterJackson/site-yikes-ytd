@@ -1,20 +1,22 @@
-// Select The Elements
-var big_wrapper;
-var hamburger_menu;
+import { initAccordion, initSliders, initSmoothScroll, setCopyrightYear } from './scripts/ui.js';
 
-function declare() {
-  big_wrapper = document.querySelector(".big-wrapper");
-  hamburger_menu = document.querySelector(".hamburger-menu");
+// --- Mobile Navigation ---
+function initMobileMenu() {
+  const big_wrapper = document.querySelector(".big-wrapper");
+  const hamburger_menu = document.querySelector(".hamburger-menu");
+
+  if (hamburger_menu && big_wrapper) {
+      hamburger_menu.addEventListener("click", () => {
+        big_wrapper.classList.toggle("active");
+      });
+  }
 }
 
-const main = document.querySelector("main");
-
-declare();
-
-function events() {
-  hamburger_menu.addEventListener("click", () => {
-    big_wrapper.classList.toggle("active");
-  });
-}
-
-events();
+// --- Initialization ---
+document.addEventListener("DOMContentLoaded", () => {
+    initMobileMenu();
+    setCopyrightYear();
+    initSliders();
+    initSmoothScroll();
+    initAccordion();
+});

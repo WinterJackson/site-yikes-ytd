@@ -854,10 +854,13 @@ input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 10px;
+  padding: 15px; /* Increased padding for better touch target */
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding doesn't overflow width */
+  font-size: 1rem; /* Prevent zoom on iOS */
+  font-family: inherit;
 }
 
 .submit-btn {
@@ -1150,6 +1153,19 @@ textarea {
     padding: 40px;
   }
 
+  .legal-h1 {
+     font-size: 2rem;
+     padding: 20px;
+  }
+  .legal-h2 {
+    font-size: 1.5rem;
+  }
+  .cc-text {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .container-ft {
     flex-direction: column;
   }
@@ -1179,6 +1195,10 @@ textarea {
 
   .container {
     padding: 0 1.5rem;
+  }
+
+  .container-hd {
+    padding: 0.5rem; /* Reduce header padding on very small screens */
   }
 
   .big-title {
